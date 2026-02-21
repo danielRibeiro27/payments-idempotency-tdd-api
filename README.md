@@ -104,3 +104,5 @@ See [TDD_PROCESS_LOGS.md](tests/TDD_PROCESS_LOGS.md) for detailed progression.
 - Dead Letter Queue (DLQ) for persistent failures
 - Encryption & monitoring
 
+## See the system design in root/*.excalidraw file
+
