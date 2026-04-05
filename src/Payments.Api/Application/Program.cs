@@ -10,7 +10,7 @@ using Payments.Api.Service.Interfaces;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddOpenApi();
-builder.Services.AddScoped<IPaymentRepository, PaymentRepository>();
+builder.Services.AddScoped<IPaymentRepository, PaymentRepository>(); //TODO: use singleton instead
 builder.Services.AddScoped<IPaymentService, PaymentService>();
 builder.Services.AddScoped<IPaymentGateway, PaymentGateway>();
 builder.Services.AddDbContext<PaymentsDbContext>(options => options.UseSqlite("Data Source=memory:payments.db"));
